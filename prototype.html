@@ -39,11 +39,27 @@
 
 <body unresolved class="fullbleed">
   <paper-drawer-panel id="drawer_panel" disable-swipe force-narrow>
-    <paper-header-panel drawer mode="seamed">
-      <div id="drawer_content"></div>
+    <paper-header-panel drawer="" mode="seamed" at-top="">
+      <div id="drawer_content" style="border: none;"></div>
     </paper-header-panel>
-    <paper-header-panel main mode="seamed">
-      <iron-pages id="app_content" attr-for-selected="id"></iron-pages>
+    <paper-header-panel main="" mode="seamed" at-top="">
+      <iron-pages id="app_content" attr-for-selected="id">
+        <section id="Promociones">
+          <poly-layout id="poly12" flex="flex-1" layout="horizontal" align="start" style="height: 450px; padding: 2px 5px 5px 2px; background-color: rgb(171, 71, 188); color: rgb(243, 229, 245); border: 1px solid rgb(170, 170, 170);" justify="justified" wrap="">
+            <poly-label text="50% de descuento en toda la tienda hasta el 18 de mayo" size="paper-font-subhead" link="" id="poly29" style="width: 250.516px; padding: 2px 0px 0px; margin: 120px 0px 0px; height: 20px;" flex=""></poly-label>
+            <poly-toolbar id="poly26">
+              <poly-icon-button icon="menu" src="" link="" id="poly26A" style="margin-right: 20px;"></poly-icon-button>
+              <poly-label text="Aplicación" size="paper-font-subhead" link="" id="poly26B" flex=""></poly-label>
+              <poly-icon-button icon="refresh" src="" link="" id="poly26C"></poly-icon-button>
+              <poly-icon-button icon="search" src="" link="" id="poly26D"></poly-icon-button>
+            </poly-toolbar>
+          </poly-layout>
+          <poly-layout id="poly13" flex="" style="height: 150px; background-color: rgb(33, 33, 33); color: rgb(255, 235, 238); display: flex; border: 1px solid rgb(170, 170, 170);"></poly-layout>
+          <poly-icon-button icon="favorite" src="" link="" id="poly25"></poly-icon-button>
+          <poly-fab icon="add" float="" link="" id="poly27"></poly-fab>
+          <poly-label text="100" size="paper-font-subhead" link="" id="poly28"></poly-label>
+        </section>
+      </iron-pages>
     </paper-header-panel>
   </paper-drawer-panel>
 
